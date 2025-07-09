@@ -1,0 +1,91 @@
+[debug] [2025-05-14T00:44:58.665Z] ----------------------------------------------------------------------
+[debug] [2025-05-14T00:44:58.668Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-05-14T00:44:58.668Z] CLI Version:   14.3.0
+[debug] [2025-05-14T00:44:58.668Z] Platform:      win32
+[debug] [2025-05-14T00:44:58.668Z] Node Version:  v22.14.0
+[debug] [2025-05-14T00:44:58.669Z] Time:          Tue May 13 2025 19:44:58 GMT-0500 (hora de Ecuador)
+[debug] [2025-05-14T00:44:58.669Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-14T00:44:58.834Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-14T00:44:58.835Z] > authorizing via signed-in user (andres23102004@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\USER\OneDrive\Documentos\UPS\Programacion y Plataformas Web\demo-angular-fireb
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-05-14T00:45:04.575Z] Using project from CLI flag: demoangularae
+[debug] [2025-05-14T00:45:04.576Z] Checked if tokens are valid: true, expires at: 1747186846997
+[debug] [2025-05-14T00:45:04.576Z] Checked if tokens are valid: true, expires at: 1747186846997
+[debug] [2025-05-14T00:45:04.577Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/demoangularae [none]
+[debug] [2025-05-14T00:45:05.227Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/demoangularae 200
+[debug] [2025-05-14T00:45:05.227Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/demoangularae {"projectId":"demoangularae","projectNumber":"126862244975","displayName":"demoangularae","name":"projects/demoangularae","resources":{"hostingSite":"demoangularae"},"state":"ACTIVE","etag":"1_8980ef5f-0b54-453d-b9e1-8902b054383f"}
+[info] i  Using project demoangularae (demoangularae) 
+[info] 
+=== Firestore Setup
+[debug] [2025-05-14T00:45:05.231Z] Checked if tokens are valid: true, expires at: 1747186846997
+[debug] [2025-05-14T00:45:05.231Z] Checked if tokens are valid: true, expires at: 1747186846997
+[debug] [2025-05-14T00:45:05.232Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/demoangularae/services/firestore.googleapis.com [none]
+[debug] [2025-05-14T00:45:05.232Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/demoangularae/services/firestore.googleapis.com x-goog-quota-user=projects/demoangularae
+[debug] [2025-05-14T00:45:05.986Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/demoangularae/services/firestore.googleapis.com 200
+[debug] [2025-05-14T00:45:05.986Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/demoangularae/services/firestore.googleapis.com [omitted]
+[debug] [2025-05-14T00:45:05.986Z] Checked if tokens are valid: true, expires at: 1747186846997
+[debug] [2025-05-14T00:45:05.986Z] Checked if tokens are valid: true, expires at: 1747186846997
+[debug] [2025-05-14T00:45:05.986Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/demoangularae/databases/(default) [none]
+[debug] [2025-05-14T00:45:06.785Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/demoangularae/databases/(default) 200
+[debug] [2025-05-14T00:45:06.785Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/demoangularae/databases/(default) {"name":"projects/demoangularae/databases/(default)","uid":"3181b9ca-30ad-4aeb-bcff-6f18d781f3e4","createTime":"2025-05-13T13:06:42.728614Z","updateTime":"2025-05-13T13:06:42.728614Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2025-05-13T23:45:07.065826Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"etag":"IMOTr+LdoY0DMKa16dTBoI0D"}
+[debug] [2025-05-14T00:45:06.785Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-05-14T00:45:06.785Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-05-14T00:45:06.785Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-14T00:45:06.785Z] > authorizing via signed-in user (andres23102004@gmail.com)
+[debug] [2025-05-14T00:45:06.786Z] [iam] checking project demoangularae for permissions ["firebase.projects.get"]
+[debug] [2025-05-14T00:45:06.786Z] Checked if tokens are valid: true, expires at: 1747186846997
+[debug] [2025-05-14T00:45:06.786Z] Checked if tokens are valid: true, expires at: 1747186846997
+[debug] [2025-05-14T00:45:06.786Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/demoangularae:testIamPermissions [none]
+[debug] [2025-05-14T00:45:06.786Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/demoangularae:testIamPermissions x-goog-quota-user=projects/demoangularae
+[debug] [2025-05-14T00:45:06.786Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/demoangularae:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-05-14T00:45:07.281Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/demoangularae:testIamPermissions 200
+[debug] [2025-05-14T00:45:07.281Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/demoangularae:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-05-14T00:45:08.892Z] Checked if tokens are valid: true, expires at: 1747186846997
+[debug] [2025-05-14T00:45:08.892Z] Checked if tokens are valid: true, expires at: 1747186846997
+[debug] [2025-05-14T00:45:08.892Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/demoangularae/releases pageSize=10&pageToken=
+[debug] [2025-05-14T00:45:09.426Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/demoangularae/releases 200
+[debug] [2025-05-14T00:45:09.427Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/demoangularae/releases {"releases":[{"name":"projects/demoangularae/releases/cloud.firestore","rulesetName":"projects/demoangularae/rulesets/33d0c7c0-7d33-460c-9814-0fda453f9ce6","createTime":"2025-05-13T13:06:45.258421Z","updateTime":"2025-05-13T13:06:45.258421Z"}]}
+[debug] [2025-05-14T00:45:09.427Z] Found ruleset: projects/demoangularae/rulesets/33d0c7c0-7d33-460c-9814-0fda453f9ce6
+[debug] [2025-05-14T00:45:09.427Z] Checked if tokens are valid: true, expires at: 1747186846997
+[debug] [2025-05-14T00:45:09.427Z] Checked if tokens are valid: true, expires at: 1747186846997
+[debug] [2025-05-14T00:45:09.427Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/demoangularae/rulesets/33d0c7c0-7d33-460c-9814-0fda453f9ce6 [none]
+[debug] [2025-05-14T00:45:09.702Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/demoangularae/rulesets/33d0c7c0-7d33-460c-9814-0fda453f9ce6 200
+[debug] [2025-05-14T00:45:09.702Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/demoangularae/rulesets/33d0c7c0-7d33-460c-9814-0fda453f9ce6 [omitted]
+[debug] [2025-05-14T00:45:10.043Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at Object.isAbsolute (node:path:452:5)
+    at Config.path (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:130:18)
+    at Config.writeProjectFile (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:162:32)
+    at C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\firestore\rules.js:37:23
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async doSetup (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\firestore\index.js:48:5)
+    at async init (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:41:9)
+    at async Command.initAction [as actionFn] (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\init.js:187:5)
+[error] 
+[error] Error: An unexpected error has occurred.
