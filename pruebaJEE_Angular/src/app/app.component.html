@@ -1,0 +1,41 @@
+<div>
+  <h2>Registrar Binomio</h2>
+  <label for="nombre">Candidato Presidente:</label>
+  <input id="nombre" [(ngModel)]="nombre" placeholder="Nombre del candidato"><br>
+
+  <label for="apellido">Apellido:</label>
+  <input id="apellido" [(ngModel)]="apellido" placeholder="apellido"><br>
+
+  <label for="nombreVicepresidente">Candidato Vicepresidente:</label>
+  <input id="nombreVicepresidente" [(ngModel)]="nombreVicepresidente" placeholder="Nombre del candidato"><br>
+
+  <label for="nombrePartido">Partido:</label>
+  <input id="nombrePartido" [(ngModel)]="nombrePartido" placeholder="partido"><br>
+
+  <button (click)="guardarDatos()">Guardar Persona</button>
+
+  <hr>
+
+  <h2>Binomios Registradas</h2>
+  <table *ngIf="datosTabla.length > 0">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Vicepresidente</th>
+        <th>Partido</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let persona of datosTabla">
+        <td>{{ persona.perID }}</td>
+        <td>{{ persona.nombre }}</td>
+        <td>{{ persona.apellido }}</td>
+        <td>{{ persona.nombreVicepresidente }}</td>
+        <td>{{ persona.nombrePartido }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <p *ngIf="datosTabla.length === 0">No hay personas registradas.</p>
+</div>
