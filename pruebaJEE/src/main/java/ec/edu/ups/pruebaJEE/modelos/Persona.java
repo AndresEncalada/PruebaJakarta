@@ -9,6 +9,9 @@ public class Persona {
 	private int perID;
 	private String nombre;
 	private String Apellido;
+	private String nombrePartido;
+	private String nombreVicepresidente;
+	
 	public int getPerID() {
 		return perID;
 	}
@@ -27,10 +30,25 @@ public class Persona {
 	public void setApellido(String apellido) {
 		Apellido = apellido;
 	}
+
+	public String getNombrePartido() {
+		return nombrePartido;
+	}
+	public void setNombrePartido(String nombrePartido) {
+		this.nombrePartido = nombrePartido;
+	}
+	public String getNombreVicepresidente() {
+		return nombreVicepresidente;
+	}
+	public void setNombreVicepresidente(String nombreVicepresidente) {
+		this.nombreVicepresidente = nombreVicepresidente;
+	}
 	@Override
 	public String toString() {
-		return "Persona [perID=" + perID + ", nombre=" + nombre + ", Apellido=" + Apellido + "]";
+		return "Persona [perID=" + perID + ", nombre=" + nombre + ", Apellido=" + Apellido + ", nombrePartido="
+				+ nombrePartido + ", nombreVicepresidente=" + nombreVicepresidente + "]";
 	}
+	
 	
 	
 }

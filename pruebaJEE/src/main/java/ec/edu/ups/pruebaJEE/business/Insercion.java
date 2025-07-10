@@ -19,18 +19,13 @@ public class Insercion {
 	public void init() {
 		System.out.println("Inicializando BD");
 		
-		Presidente presidente = new Presidente();
+		Persona presidente = new Persona();
 		presidente.setNombre("Andres");
 		presidente.setApellido("Encalada");
 		presidente.setNombrePartido("binomio1");
-		
-		Vicepresidente vicep = new Vicepresidente();
-		vicep.setNombre("Andres");
-		vicep.setApellido("Encalada");
-		vicep.setNombrePartido("binomio1");
+		presidente.setNombreVicepresidente("Bryan Acevedo");
 		
 		daoPersona.insert(presidente);
-		daoPersona.insert(vicep);
 		
 		List<Persona> personas = daoPersona.getAll();
 		for(Persona u : personas){
